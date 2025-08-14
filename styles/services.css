@@ -1,12 +1,58 @@
+body {
+  background-color: var(--gray-500);
+}
+
 .projects {
   padding-top: 8.0625rem;
   text-align: center;
 
-  strong {
+  & strong {
     font: var(--text-subtitle);
     color: var(--red);
   }
 
-  h2 {
+  & h2 {
+    font: var(--title-md);
+    color: var(--gray-100);
+    margin-top: 0.5rem;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    max-width: 65rem;
+    margin: 3.5rem auto;
+    padding: 1.25rem;
+  }
+
+  .project-card {
+    background: var(--gray-400);
+    border-radius: 0.75rem;
+    padding: 0.9375rem;
+    text-align: left;
+
+    padding-bottom: 1.5rem;
+  }
+
+  & img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    display: block;
+  }
+
+  & span {
+    display: inline-block;
+    margin-top: 1.5rem;
+    font: var(--title-sm);
+    color: var(--gray-100);
+  }
+
+  & p {
+    margin-top: 0.5rem;
+    padding-bottom: 1.0625rem;
+    font: var(--text-sm);
+    color: var(--gray-200);
   }
 }
