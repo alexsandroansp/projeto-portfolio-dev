@@ -1,0 +1,12 @@
+.projects {
+  padding-top: 8.0625rem;
+  text-align: center;
+
+  strong {
+    font: var(--text-subtitle);
+    color: var(--red);
+  }
+
+  h2 {
+  }
+}

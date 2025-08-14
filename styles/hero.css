@@ -1,13 +1,16 @@
 body {
-  background-image: url(../assets/bg-intro.png);
-  background-size: contain;
+  background-image: url("../assets/bg-intro.png");
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  width: 100%;
+  height: 100vh;
 }
 
 .intro {
   margin: 0 auto;
   max-width: 85.375rem;
-  height: 46.875rem;
 }
 
 .avatar {
@@ -124,5 +127,6 @@ body {
 
 .down {
   display: block;
-  margin: 5.875rem auto;
+  margin: 0 auto;
+  padding-top: 5rem;
 }
