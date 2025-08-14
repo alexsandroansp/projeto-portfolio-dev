@@ -1,0 +1,123 @@
+body {
+  background-image: url(../assets/bg-intro.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.intro {
+  margin: 0 auto;
+  max-width: 85.375rem;
+  height: 46.875rem;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8.2725rem;
+}
+
+.code {
+  position: relative;
+  display: inline-block;
+}
+
+.photo {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 9999rem;
+  border: 3px solid var(--red);
+  object-fit: cover;
+}
+
+.code img.code {
+  position: absolute;
+  bottom: 0rem;
+  right: 0rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.code::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 7px;
+  border-radius: 9999rem;
+  border: 4px solid black;
+  pointer-events: none;
+}
+
+.text {
+  text-align: center;
+  margin-top: 3.5rem;
+
+  & p {
+    font: var(--text-subtitle);
+    color: var(--gray-200);
+  }
+
+  & strong {
+    color: var(--red);
+  }
+
+  & h1 {
+    font: var(--title-lg);
+    color: var(--gray-100);
+
+    margin-top: 0.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  & .information {
+    font: var(--text-sm);
+    color: var(--gray-300);
+  }
+}
+
+.tags {
+  display: flex;
+  margin: 5rem 19.125rem;
+  gap: 1rem;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--gray-400);
+  border-radius: 999rem;
+  background: var(--gray-400);
+  height: 2.5rem;
+  padding-left: 0.5rem;
+
+  & img {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  & span {
+    font: var(--text-md);
+    color: var(--gray-200);
+  }
+
+  &#github {
+    width: 7.125rem;
+  }
+  &#html {
+    width: 6.5625rem;
+  }
+  &#css {
+    width: 5.75rem;
+  }
+  &#javascript {
+    width: 8.625rem;
+  }
+  &#react {
+    width: 6.625rem;
+  }
+  &#nodejs {
+    width: 7.4375rem;
+  }
+}

@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -26,8 +26,8 @@
   --title-md: bold 1.5rem/1.2 var(--ff-asap);
   --title-sm: bold 1rem/1.2 var(--ff-asap);
 
-  --text-subtitle: regular 1.25rem/1.2 var(--ff-inconsolata);
+  --text-subtitle: normal 1.25rem/1.2 var(--ff-inconsolata);
 
-  --text-md: regular 1rem/1.4 var(--ff-mavenpro);
-  --text-sm: regular 0.875rem/1.4 var(--ff-mavenpro);
+  --text-md: normal 1rem/1.4 var(--ff-mavenpro);
+  --text-sm: normal 0.875rem/1.4 var(--ff-mavenpro);
 }
