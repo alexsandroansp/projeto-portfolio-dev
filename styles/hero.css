@@ -82,7 +82,9 @@ body {
 
 .tags {
   display: flex;
-  margin: 5rem 19.125rem;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem;
   gap: 1rem;
 }
 
@@ -93,7 +95,6 @@ body {
   border-radius: 999rem;
   background: var(--gray-400);
   height: 2.5rem;
-  padding-left: 0.5rem;
 
   & img {
     padding-left: 0.5rem;

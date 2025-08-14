@@ -1,14 +1,18 @@
-body {
-  background-color: var(--gray-500);
+.services {
+  margin-top: 14.5rem;
+  background-color: var(--gray-600);
 }
 
-.projects {
-  padding-top: 8.0625rem;
-  text-align: center;
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
   & strong {
     font: var(--text-subtitle);
     color: var(--red);
+    margin-top: 5.5rem;
   }
 
   & h2 {
@@ -16,43 +20,50 @@ body {
     color: var(--gray-100);
     margin-top: 0.5rem;
   }
+}
 
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.25rem;
-    max-width: 65rem;
-    margin: 3.5rem auto;
-    padding: 1.25rem;
-  }
+.grid {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
 
-  .project-card {
-    background: var(--gray-400);
-    border-radius: 0.75rem;
-    padding: 0.9375rem;
-    text-align: left;
+.grid .devices {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
 
-    padding-bottom: 1.5rem;
-  }
+  width: 17.5rem;
+  height: 9.6875rem;
+  padding: 1rem;
+  margin-top: 3.5rem;
+  margin-bottom: 7.5rem;
+  text-align: left;
+}
 
-  & img {
-    width: 100%;
-    height: auto;
-    border-radius: 0.5rem;
-    display: block;
-  }
+.grid .devices header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
 
-  & span {
-    display: inline-block;
-    margin-top: 1.5rem;
-    font: var(--title-sm);
-    color: var(--gray-100);
-  }
+.grid .devices img {
+  width: 3rem;
+  height: 3rem;
+}
 
-  & p {
-    margin-top: 0.5rem;
-    padding-bottom: 1.0625rem;
-    font: var(--text-sm);
-    color: var(--gray-200);
-  }
+.grid .devices header span {
+  font: var(--title-sm);
+  color: var(--gray-100);
+  margin-top: 1.25rem;
+}
+
+.grid .devices header p {
+  font: var(--text-sm);
+  color: var(--gray-200);
+  margin-top: 0.5rem;
 }
