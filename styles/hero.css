@@ -121,3 +121,8 @@ body {
     width: 7.4375rem;
   }
 }
+
+.down {
+  display: block;
+  margin: 0 auto;
+}
