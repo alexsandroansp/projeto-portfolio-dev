@@ -57,6 +57,11 @@ body {
     font: var(--text-sm);
     color: var(--gray-200);
   }
+
+  .project-card a {
+    position: relative;
+    z-index: 10;
+  }
 }
 
 /* Tablets: até 1024px */

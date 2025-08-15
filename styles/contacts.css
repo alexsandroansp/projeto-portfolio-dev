@@ -149,4 +149,9 @@ header p {
     font-size: 0.75rem;
     margin-left: 0.5rem;
   }
+
+  .links a {
+    position: relative;
+    z-index: 10;
+  }
 }
