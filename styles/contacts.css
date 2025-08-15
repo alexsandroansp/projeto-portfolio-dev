@@ -4,6 +4,7 @@
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
+  overflow: hidden;
 }
 
 .my-contacts {
@@ -30,18 +31,19 @@ header p {
   justify-content: center;
   flex-direction: column;
   margin-top: 3rem;
-  gap: 3rem;
+  gap: 1rem;
 
   & .socialbutton {
     width: 25rem;
     height: 4.25rem;
     background-color: var(--gray-400);
     border-radius: 0.5rem;
-    cursor: pointer;
 
     display: flex;
     align-items: center;
     justify-content: left;
+    text-decoration: none;
+    color: inherit;
   }
 
   & .socialbutton img:last-child {
@@ -57,5 +59,94 @@ header p {
     font: var(--text-md);
     color: var(--gray-200);
     margin-left: 0.75rem;
+  }
+}
+
+/* Tablets: até 1024px */
+@media (max-width: 1024px) {
+  .contact-section {
+    height: auto;
+    padding: 5rem 0;
+  }
+
+  .my-contacts {
+    margin-top: 4rem;
+    font-size: 1rem;
+  }
+
+  .my-contacts h2 {
+    font-size: 1.75rem;
+    margin-top: 0.5rem;
+  }
+
+  header p {
+    font-size: 0.875rem;
+  }
+
+  .links .socialbutton {
+    width: 20rem;
+    height: 4rem;
+  }
+
+  .links .socialbutton img:first-child {
+    margin-left: 1rem;
+  }
+
+  .links .socialbutton img:last-child {
+    margin-right: 1rem;
+  }
+
+  .links .socialbutton span {
+    font-size: 0.875rem;
+    margin-left: 0.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-section {
+    height: auto;
+    padding: 3rem 1rem;
+  }
+
+  .my-contacts {
+    margin-top: 2rem;
+    font-size: 0.875rem;
+    text-align: center;
+  }
+
+  .my-contacts h2 {
+    font-size: 1.5rem;
+  }
+
+  header p {
+    font-size: 0.75rem;
+    text-align: center;
+  }
+
+  .links {
+    gap: 0.75rem;
+  }
+
+  .links .socialbutton {
+    width: 100%;
+    max-width: 18rem;
+    height: 3.5rem;
+    justify-content: center;
+    text-align: center;
+    padding: 0 0.5rem;
+  }
+
+  .links .socialbutton img:first-child {
+    margin-left: 0;
+  }
+
+  .links .socialbutton img:last-child {
+    margin-left: 0.5rem;
+    margin-right: 0;
+  }
+
+  .links .socialbutton span {
+    font-size: 0.75rem;
+    margin-left: 0.5rem;
   }
 }

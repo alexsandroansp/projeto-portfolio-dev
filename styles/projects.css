@@ -5,6 +5,7 @@ body {
 .projects {
   padding-top: 8.0625rem;
   text-align: center;
+  overflow-x: hidden;
 
   & strong {
     font: var(--text-subtitle);
@@ -55,5 +56,56 @@ body {
     padding-bottom: 1.0625rem;
     font: var(--text-sm);
     color: var(--gray-200);
+  }
+}
+
+/* Tablets: até 1024px */
+@media (max-width: 1024px) {
+  .projects .grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 90%;
+    margin: 3rem auto;
+    gap: 1rem;
+  }
+
+  .project-card {
+    padding: 0.75rem;
+  }
+
+  .projects h2 {
+    font-size: 1.75rem;
+  }
+
+  .projects span {
+    font-size: 1rem;
+  }
+
+  .projects p {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .projects .grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0.5rem;
+  }
+
+  .project-card {
+    padding: 0.625rem;
+  }
+
+  .projects h2 {
+    font-size: 1.5rem;
+  }
+
+  .projects span {
+    font-size: 0.875rem;
+  }
+
+  .projects p {
+    font-size: 0.75rem;
+    padding-bottom: 0.75rem;
   }
 }

@@ -31,3 +31,8 @@
   --text-md: normal 1rem/1.4 var(--ff-mavenpro);
   --text-sm: normal 0.875rem/1.4 var(--ff-mavenpro);
 }
+
+html,
+body {
+  overflow-x: hidden;
+}
