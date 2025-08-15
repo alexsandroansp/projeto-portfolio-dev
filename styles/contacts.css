@@ -37,6 +37,7 @@ header p {
     height: 4.25rem;
     background-color: var(--gray-400);
     border-radius: 0.5rem;
+    cursor: pointer;
 
     display: flex;
     align-items: center;
