@@ -1,0 +1,60 @@
+.contact-section {
+  background-image: url(../assets/bg-contacts.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.my-contacts {
+  margin-top: 8rem;
+  font: var(--text-subtitle);
+  color: var(--purple);
+
+  & h2 {
+    margin-top: 0.5rem;
+    font: var(--title-md);
+    color: var(--gray-100);
+  }
+}
+
+header p {
+  margin-top: 0.5rem;
+  font: var(--text-md);
+  color: var(--gray-200);
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 3rem;
+  gap: 3rem;
+
+  & .socialbutton {
+    width: 25rem;
+    height: 4.25rem;
+    background-color: var(--gray-400);
+    border-radius: 0.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+
+  & .socialbutton img:last-child {
+    margin-left: auto;
+    margin-right: 1.5rem;
+  }
+
+  & img {
+    margin-left: 1.25rem;
+  }
+
+  & span {
+    font: var(--text-md);
+    color: var(--gray-200);
+    margin-left: 0.75rem;
+  }
+}
